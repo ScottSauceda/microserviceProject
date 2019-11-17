@@ -20,7 +20,7 @@ public interface CommentService {
     public HttpStatus deleteComment(long id);
 
 
-    public HttpStatus createComment(Comment comment, long userId);
+    public HttpStatus createComment(Comment comment, long userId, String userName);
 
     List<Comment> listCommentsByUser(long userId);
 
