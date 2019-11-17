@@ -71,7 +71,8 @@ public class UserProfile {
                 .append("id:").append(id)
                 .append(",email:").append(email)
                 .append(",mobile:").append(mobile)
-                .append(",username:").append(address)
+                .append(",address:").append(address)
+//                .append(",username:").append(address)
                 .append("}");
         return s.toString();
     }
