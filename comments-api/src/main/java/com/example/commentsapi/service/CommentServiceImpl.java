@@ -59,9 +59,10 @@ public class CommentServiceImpl implements CommentService{
 ////    }
 
     @Override
-    public HttpStatus createComment(Comment comment, long userId, String userName) {
+    public HttpStatus createComment(Comment comment, long userId, String userName, long postId) {
         comment.setUserId(userId);
         comment.setUsername(userName);
+        comment.setPostId(postId);
         commentRepository.save(comment);
         return HttpStatus.OK;
     }
