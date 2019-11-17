@@ -12,6 +12,10 @@ public class Comment {
     @Column(name="text")
     private String text;
 
+
+    @Column(name = "username")
+    private String username;
+
     @Column(name = "user_id")
     private long userId;
 
@@ -60,6 +64,14 @@ public class Comment {
 
     public void setPostId(long postId) {
         this.postId = postId;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String toString() {

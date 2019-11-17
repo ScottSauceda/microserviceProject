@@ -15,8 +15,8 @@ public class CommentsController {
     private CommentService commentService;
 
     @PostMapping("/create")
-    public HttpStatus createComment(@RequestBody Comment comment, @RequestHeader("userid") long userId) {
-        return commentService.createComment(comment, userId);
+    public HttpStatus createComment(@RequestBody Comment comment, @RequestHeader("userid") long userId, @RequestHeader("userName") String userName) {
+        return commentService.createComment(comment, userId, userName);
     }
 
     @GetMapping("/view/user")
