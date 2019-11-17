@@ -33,6 +33,7 @@ public class AuthenticationFilter extends ZuulFilter {
         UserBean user = userRepository.getUserByUsername(un);
         if(user != null)
             ctx.addZuulRequestHeader("userid", String.valueOf(user.getId()));
+            ctx.addZuulRequestHeader("userName", String.valueOf(user.getUsername()));
         return null;
     }
 }
