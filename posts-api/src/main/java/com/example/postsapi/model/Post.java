@@ -15,8 +15,8 @@ public class Post {
     @Column(name="description")
     private String description;
 
-//    @Column(name = "username")
-//    private String username;
+    @Column(name = "username")
+    private String username;
 
     @Column(name = "user_id")
     private long userId;
@@ -66,6 +66,14 @@ public class Post {
         this.userId = userId;
     }
 
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
     public String toString() {
         StringBuilder s = new StringBuilder();
         s.append("Post{")
@@ -77,14 +85,5 @@ public class Post {
                 .append("}");
         return s.toString();
     }
-
-
-//    public String getUsername() {
-//        return username;
-//    }
-//
-//    public void setUsername(String username) {
-//        this.username = username;
-//    }
 
 }

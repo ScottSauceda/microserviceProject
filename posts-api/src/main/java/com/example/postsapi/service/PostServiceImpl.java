@@ -51,8 +51,9 @@ public class PostServiceImpl implements PostService{
     }
 
     @Override
-    public HttpStatus createPost(Post post, long userId) {
+    public HttpStatus createPost(Post post, long userId, String userName) {
         post.setUserId(userId);
+        post.setUsername(userName);
         postRepository.save(post);
         return HttpStatus.OK;
     }

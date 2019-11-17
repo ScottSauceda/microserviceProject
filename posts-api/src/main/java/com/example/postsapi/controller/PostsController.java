@@ -19,6 +19,11 @@ public class PostsController {
         return postService.getAll();
     }
 
+    @PostMapping("/create")
+    public HttpStatus createPost(@RequestBody Post Post, @RequestHeader("userid") long userId, @RequestHeader("userName") String userName) {
+        return postService.createPost(Post, userId, userName);
+    }
+
     @GetMapping("/view/{id}")
     public Post searchById(@PathVariable long id) {
         return postService.searchById(id);
@@ -27,11 +32,6 @@ public class PostsController {
     @GetMapping("/view/user")
     public List<Post> listPostByUser(@RequestHeader("userid") long userId) {
         return postService.listPostByUser(userId);
-    }
-
-    @PostMapping("/create")
-    public HttpStatus createPost(@RequestBody Post Post, @RequestHeader("userid") long userId) {
-        return postService.createPost(Post, userId);
     }
 
     @PatchMapping("/update/{id}")

@@ -14,13 +14,14 @@ public interface PostService {
 
     public Iterable<Post> searchByText(String text);
 
+    public HttpStatus createPost(Post Post, long userId, String userName);
+
 //    public List<Post> searchByLength(int min, int max);
 //
 //    public List<Post> searchByContent(String content);
 
     public HttpStatus deletePost(long id);
 
-    public HttpStatus createPost(Post Post, long userId);
 
     public HttpStatus updatePost(long id, Post PostRequest);
 
