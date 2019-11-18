@@ -23,15 +23,11 @@ Reddit application using microservices architecture
 
 - [User Stories](#user-stories)
 - [Timeline](#timeline)
+- [Technologies](#Technologies-Used)
+- [Approach](#General-Approach)
+- [Hurdles](#Hurdles)
+- [Dependencies](#Dependency-Instructions)
 - [ERD](#erd)
-- [Diagrams](#class-diagrams)
-- [API](#api)
-- [API Responses](#responses)
-- [Objects](#objects)
-- [Testing](#testing)
-- [Test Results](#results)
-- [What's Included](#whats-included)
-- [Creators](#developers)
 
 ## User-stories
 
@@ -66,9 +62,7 @@ Reddit application using microservices architecture
     
             *-*-*-*-*-*-*
 
-#erd
-
-## Technologies Used
+## Technologies-Used
 
     IntelliJ
     
@@ -80,16 +74,16 @@ Reddit application using microservices architecture
     
     Psql  
 
-## General Approach
+## General-Approach
 
     The general approach was to build each individual microservice with full CRUD functionality and then added on as needed to fulfill the front end routes required.
     
 
-## Unsolved problems and other hurdles
+## Hurdles
 
     The only unsolved problem left was the editing of user profile. It seems to be a CORS issue, but CORS issue was already solved before.
 
-## Dependency Installation Instructions
+## Dependency-Instructions
 
     
 
