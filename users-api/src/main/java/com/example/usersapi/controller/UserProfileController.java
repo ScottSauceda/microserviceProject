@@ -22,6 +22,11 @@ public class UserProfileController {
         return userProfileService.listProfileByUser(userName);
     }
 
+    @PatchMapping("/update/profile")
+    public HttpStatus updatePost( @RequestHeader("userName") String userName, @RequestBody UserProfile userProfileRequest) {
+        return userProfileService.updateProfile(userName, userProfileRequest);
+    }
+
 //    @PatchMapping("/update/profile")
 //    public HttpStatus createProfile(@RequestBody UserProfile userProfile, @RequestHeader("userName") String userName) {
 //        return userProfileService.createProfile(userProfile, userName);

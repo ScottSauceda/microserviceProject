@@ -22,4 +22,13 @@ public class UserProfileServiceImpl implements UserProfileService {
         return userProfileRepository.findByUsername(userName);
     }
 
+    public HttpStatus updateProfile(String userName, UserProfile userProfileRequest) {
+        UserProfile userProfile = userProfileRepository.findByUsername(userName);
+        userProfile.setAddress(userProfileRequest.getAddress());
+        userProfile.setMobile(userProfileRequest.getMobile());
+        userProfile.setEmail(userProfileRequest.getEmail());
+        userProfileRepository.save(userProfile);
+        return HttpStatus.OK;
+    }
+
 }

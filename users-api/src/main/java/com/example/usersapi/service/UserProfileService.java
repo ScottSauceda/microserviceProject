@@ -10,6 +10,8 @@ public interface UserProfileService {
 
         public UserProfile listProfileByUser(String userName);
 
+        public HttpStatus updateProfile(String userName, UserProfile userProfileRequest);
+
 
 }
 
