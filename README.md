@@ -1,24 +1,6 @@
 # ga-reddit-api-microservices
 Reddit application using microservices architecture
         
-- A README.md file with:
-        Explanations of the technologies used.
-        
-        A couple of paragraphs about the general approach you took.
-        
-        Design: your design
-                why you chose your design
-                if intercommunication
-                    if no, then why not
-            
-                demo 
-                
-        
-        Installation instructions for any dependencies.
-        
-        A link to your ERD — sketches of major views or interfaces in your application.
-        
-
 ## Table of contents
 
 - [User Stories](#user-stories)
@@ -76,15 +58,21 @@ Reddit application using microservices architecture
 
 ## General-Approach
 
-    The general approach was to build each individual microservice with full CRUD functionality and then added on as needed to fulfill the front end routes required.
+    The general approach was to use our user stories to instruct us how to build each individual microservice.
+    Our ERD told us how to build out our database. This differs in previous projects because we achieved this
+    using microservices with Dcoker as opposed to a monoloithic approach.
     
 
 ## Hurdles
 
-    The only unsolved problem left was the editing of user profile. It seems to be a CORS issue, but CORS issue was already solved before.
+    The only unsolved problem left was the editing of user profile.
+    It seems to be a CORS issue, but CORS issue was already solved before.
 
 ## Dependency-Instructions
 
+    In order to install dependencies. Open this project with IntelliJ from the terminal via the 
+    "idea ." command from each microservice directory. Go to pom.xml file for reach microservice and forever
+    depencies have installed. If not you must enable auto-import here.
     
 
 ## ERD 
