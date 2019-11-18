@@ -78,3 +78,8 @@ Reddit application using microservices architecture
 ## ERD 
 ##### Rough Sketch of ERD.
 ![ERD](./img/ERD.jpg)
+
+## Design 
+##### Design sketch.
+
+![Design](./img/design.jpg)
