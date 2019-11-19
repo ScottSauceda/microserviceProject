@@ -62,11 +62,20 @@ Reddit application using microservices architecture
     Our ERD told us how to build out our database. This differs in previous projects because we achieved this
     using microservices with Dcoker as opposed to a monoloithic approach.
     
+    Gateway security was also implemented on the Api Gateway. This allowed us to do all authentication through user
+    and pass the username and id as required in the front end. This was simpler than interconnection and only required
+    a username and user id column to be saved in the post, comment, and user profile tables.
+    
 
 ## Hurdles
 
-    The only unsolved problem left was the editing of user profile.
-    It seems to be a CORS issue, but CORS issue was already solved before.
+    A major hurdle was implementing security on the Api Gateway. Since this was a new way of implementing security,
+    it made it difficult to understand what exactly needed to be where in order to pass authentication in user signup and login
+    to generate the JWT.
+    
+    Another big hurdle to overcome was understanding how the front end worked. This made it difficult to understand exactly what was needed on the backend. 
+    Initially CORS issues were experienced when trying to connect to the front end. After this issue was solved, I was able to pass data to the front. This led
+    to more issues, because the posts and comments objects did not have the required user information saved in their table columns.
 
 ## Dependency-Instructions
 
